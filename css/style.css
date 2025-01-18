@@ -7,9 +7,12 @@ footer {
 header {
   display: flex;
 }
-body{font-family: "Montserrat", serif;
-  font-optical-sizing: auto;}
 
+body {
+  font-family: "Jersey 15", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 main {
   padding: 10px;
@@ -31,11 +34,13 @@ main {
 
 .post img {
   margin: 20px;
-  transition: transform 0.5s ;
+  transition: transform 0.5s;
 }
-.post img:hover{
+
+.post img:hover {
   transform: rotate(360deg);
 }
+
 
 .post-info {
   color: grey;
@@ -55,6 +60,7 @@ main {
 #menu1 {
   font-family: "Jersey 15", serif;
   font-weight: 400;
+
   font-style: normal;
   position: relative;
   display: block;
@@ -62,101 +68,124 @@ main {
   height: auto;
   z-index: 10;
 }
-#menu1 ul{
+
+#menu1 ul {
   position: relative;
   margin: 0;
   padding: 0;
   list-style: none;
   width: 100%;
 }
-#menu1 ul li{
+
+#menu1 ul li {
   position: relative;
   float: left;
   display: block;
-
 }
-#menu1 ul li a{
-display:block;
-padding: 9px 25px;
-font-size: 14px;
-text-transform:uppercase;
-color: whith;
-transition: transform 0.3s ;}
 
-#menu ul li a:hover{
+#menu1 ul li a {
+  display: block;
+  padding: 9px 25px;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: white;
+  transition: transform 0.3s;
+}
+
+#menu1 ul li a:hover {
   transform: scale(1.1) rotate(-5deg);
-  color:darkgreen
+  color: chartreuse;
 }
 
 
-#menu1 ul li ul{
-  position:absolute;
-  top:36px;
+
+#menu1 ul li ul {
+  position: absolute;
+  top: 36px;
   display: none;
-  width:200px;
-  background-color: rgb(190, 151, 226);        
+  width: 200px;
+  background: rgb(50, 50, 115);
 }
-#menu1 ul li :hover ul{
+
+#menu1 ul li:hover ul {
   display: block;
 }
-#menu1 ul li ul li{
-  border-top:1px solid #fff;
-  padding:  7px 25px;
+
+#menu1 ul li ul li a {
+  border-top: 1px solid #fff;
+  padding: 7px 25px;
+
 }
-#menu1 ul li ul li{
-  float:none;
-  width:100%;
+
+#menu1 ul li ul li {
+  float: none;
+  width: 100%;
 }
-.carousele{
+
+.footer-menu {
+  display: flex;
+}
+
+.carousele {
   margin: 10px;
   max-width: 100%;
 }
-.carousele-element{
-  margin:40px;
+
+.carousele-element {
+  margin: 40px;
 }
-.carousele div img{
+
+.carousele div img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
-.slick_prev, .slick-next{
+
+.slick-prev,
+.slick-next {
   border-radius: 50%;
   width: 40px;
   height: 40px;
   z-index: 1;
-  background-color:rgb(0, 0, 0, 0.5);
-}
-.slick-dots li button::before{
-  color: black;
-  font-size:30px;}
+  background-color: rgb(0, 0, 0, 0.5);
 
-#lego-map{
-  text-align: center ;
-  padding: 50px;
-  background-color: aliceblue;
 }
-.map-container{
+
+.slick-dots li button::before {
+  color: black;
+  font-size: 30px;
+}
+
+
+#lego-map {
+  text-align: center;
+  padding: 50px;
+  background-color: #e0e0e0;
+}
+
+.map-container {
   position: relative;
   width: 500px;
   height: 350px;
   margin: 0 auto;
-  background: url("../img/LegoMapColor-1024x640\ \(1\).png");
-  border:2px solid #333;
+  background: url('../img/LEGO-corporate-map.jpg');
+  background-size: cover;
+  border: 2px solid #333;
   border-radius: 10px;
 }
 
-
-.city{
+.city {
   position: absolute;
   padding: 10px;
-  background-color: rgba(50,46,46,0.7);
+  background-color: rgba(50, 46, 46, 0.7);
   border-radius: 10px;
   cursor: pointer;
-  color:#fff;
+  color: #fff;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
-.city::before{
-  content:"";
+
+.city::before {
+  content: '';
   position: absolute;
   top: 50%;
   left: 50%;
@@ -168,41 +197,48 @@ transition: transform 0.3s ;}
   transform-origin: center;
   opacity: 0;
   z-index: -1;
-  transition: opasity 0.4sb ease;
+  transition: opacity 0.4s ease;
 }
-.city:hover{
+
+.city:hover {
   transform: scale(1.2);
   background-color: rgba(255, 0, 0, 0.8);
   color: black;
 }
-.city:hover::before{
+
+.city:hover::before {
   opacity: 1;
   animation: pulse 1s infinite;
 }
-@keyframes pulse{
-  0%{
+
+@keyframes pulse {
+  0% {
     transform: scale(1);
     opacity: 0.7;
   }
-  50%{
+
+  50% {
     transform: scale(1.5);
     opacity: 0;
   }
-  100%{
+
+  100% {
     transform: scale(1);
     opacity: 0;
   }
 }
-.city-1{
-  top:60px;
-  left:120px;
-}
-.city-2{
-  top:180px;
-  left:230px;
-}
-.city-3{
-  top:120px;
-  left:350px;
+
+.city-1 {
+  top: 60px;
+  left: 120px;
 }
 
+.city-2 {
+  top: 180px;
+  left: 230px;
+}
+
+.city-3 {
+  top: 120px;
+  left: 350px;
+}
